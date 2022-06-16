@@ -1,4 +1,5 @@
  import Excersise1.Ex1;
+ import Excersise2.Ex2;
 
  import java.util.ArrayList;
 import java.util.stream.Stream;
@@ -23,6 +24,9 @@ public class Main {
 
         Ex1 test = new Ex1();
         System.out.println(test.oddNumbers(persons));
+
+        Ex2 test2 = new Ex2();
+        System.out.println(test2.upperCaseSorted(persons));
 
     }
 }
