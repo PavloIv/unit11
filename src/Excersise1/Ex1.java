@@ -1,9 +1,5 @@
 package Excersise1;
-
-import javax.swing.*;
 import java.util.ArrayList;
-import java.util.stream.Stream;
-
 public class Ex1 {
     public String oddNumbers(ArrayList<String> persons) {
         StringBuilder buffer = new StringBuilder();
@@ -13,5 +9,4 @@ public class Ex1 {
         }
         return buffer.toString();
     }
-
 }

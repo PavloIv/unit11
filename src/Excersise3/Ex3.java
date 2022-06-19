@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 public class Ex3 {
     public String numbers(String[] ex3) {
         Stream<String> streamNumbers = Arrays.stream(ex3);
-        return streamNumbers.flatMap((p) -> Arrays.asList(p.split(", ")).stream())
-                .sorted().collect(Collectors.toList()).toString();
+        return streamNumbers.flatMap((p) -> Arrays.asList(p.split(", ")).stream()).map(Integer::valueOf)
+                .sorted(Integer::compareTo).map(String::valueOf).collect(Collectors.joining(", "));
     }
 }
