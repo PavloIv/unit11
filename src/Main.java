@@ -4,7 +4,9 @@ import Excersise3.Ex3;
 import Excersise4.Ex4;
 import Excersise5.Ex5;
 
+import java.awt.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -46,4 +48,6 @@ public class Main {
         System.out.println("test5.zip(firstStream,secondStream) = " + test5.zip(firstStream, secondStream).collect(Collectors.toList()));
 
     }
+
+
 }
